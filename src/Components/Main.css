@@ -1,0 +1,275 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EDEFF6;
+
+
+}
+
+.background {
+    width: 500px;
+    height: 300px;
+    background-color: #788EFF;
+    border-radius: 6px;
+    box-shadow: 1px 3px 9px 2px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    top: 150px;
+    left: 170px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.setting {
+    padding: 1.5rem;
+}
+
+.setting h2 {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.setting p {
+    padding: .7rem 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #0a0938;
+}
+
+.remaining {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem 1rem;
+}
+
+.remaining-count {
+    font-size: 12px;
+    opacity: .5;
+}
+
+.arrows {
+    cursor: pointer;
+}
+
+.arrows i {
+    padding-right: .5rem;
+}
+
+.fa-long-arrow-left {
+    opacity: .5;
+}
+
+.box2 {
+    position: absolute;
+    top: 430px;
+    left: 680px;
+    background-color: white;
+    box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    /* width: 500px;
+    height: 350px; */
+}
+
+.subscribe {
+    padding: 2rem;
+}
+
+.subscribe h2 {
+    font-size: 20px;
+    color: #0a0938;
+}
+
+.subscribe p {
+    padding: .8rem 0;
+    font-size: 15px;
+    color: #0a0938;
+    font-weight: 400;
+
+}
+
+input {
+    width: 24px;
+    height: 24px;
+}
+
+#checkbox {
+    accent-color: #546dec;
+    color: white;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+}
+
+.check label {
+    padding-left: 1.2rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+
+}
+
+.btn {
+    padding: .5rem 1rem;
+    cursor: pointer;
+
+}
+
+.skip {
+    background-color: #EDEFF6;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.next {
+    background-color: #0a0938;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* ------------------------------ */
+/* .loading {
+    display: flex;
+    padding: .5rem 1rem;
+}
+
+.frame-child,
+.frame-child3,
+.frame-child4,
+.frame-item {
+    position: relative;
+    border-radius: var(--br-sm);
+    height: 16px;
+}
+
+.frame-child {
+    background-color: var(--color-dodgerblue);
+    box-shadow: 0 6px 6px rgba(120, 142, 255, 0.2);
+    width: 60px;
+}
+
+.frame-child3,
+.frame-child4,
+.frame-item {
+    width: 59px;
+
+}
+
+.frame-item {
+    background-color: var(--color-dodgerblue);
+    box-shadow: 0 6px 6px rgba(120, 142, 255, 0.2);
+}
+
+.frame-child3,
+.frame-child4 {
+    background-color: var(--color-white);
+    background-color: #ccc;
+}
+
+.frame-child4 {
+    width: 60px;
+} */
+
+/* .rectangle-parent {
+
+
+    border-radius: 25px;
+    background-color: var(--color-ghostwhite);
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}  */
+
+/* .check {
+    display: flex !important;
+    align-items: center;
+} */
+
+:root {
+    /* fonts */
+    --font-poppins: Poppins;
+    --font-merriweather: Merriweather;
+
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-5xl: 24px;
+
+    /* Colors */
+    --color-ghostwhite: #edeff6;
+    --color-white: #fff;
+    --a0938: #0a0938;
+    --color-slategray: #757599;
+    --color-dodgerblue: #788eff;
+
+    /* Gaps */
+    --gap-base: 16px;
+    --gap-6xs: 7px;
+
+    /* Paddings */
+    --padding-base: 16px;
+    --padding-5xl: 24px;
+
+    /* Border radiuses */
+    --br-5xl: 24px;
+    --br-5xs: 8px;
+    --br-9xs: 4px;
+    --br-sm: 14px;
+}
+
+/* ----------------------------- */
+
+
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+
+}
+
+.loading div {
+    width: 45px;
+    height: 14px;
+    background-color: #ccc;
+    /* padding: .5rem; */
+    margin: 0 .1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.loading .filled {
+    background-color: #3498db;
+}
